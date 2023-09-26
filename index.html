@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apollonia Dental Practice</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="nav-header">
+      <ul>
+        <li id="employees">Employees</li>
+        <li id="departments">Departments</li>
+      </ul>
+    </div>
+    <div class="main">
+      <div>
+        <pre id="list"></pre>
+        <hr/>
+        <p id="total"></p>
+      </div>
+      <div>
+      <div class="details">
+        <div>
+        Employee name: <input id="name"/>
+        </div>
+        <div>
+        Employee surname: <input id="surname"/>
+        </div>
+        <div>
+        Department: <select id="departmentSelect">
+          <option value="">Select department</option>
+        </select>
+        </div>
+        <div>
+          <button onclick="save_add_empl()" id="saveEmpl">Save</button>
+          <button onclick="delete_cancel_empl()" id="delEmpl">Delete</button>
+        </div>
+      </div>
+      <div class="dept-details">
+        <p id="dept-title">Employees in department:</p>
+        <pre id="dept-employees"></pre>
+        <input id="dept-caption">
+        <div>
+          <button onclick="save_add_dept()" id="saveDept">Save</button>
+          <button onclick='delete_cancel_dept()' id="delDept">Delete</button>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    <script src="/config.js"></script>
+    <script src="js/software.js"></script>
+  </body>
+</html>
